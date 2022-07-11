@@ -1,0 +1,8 @@
+.git*
+.vscode
+local.settings.json
+test
+excel_filter
+parse-json
+reverse-proxy
+target
