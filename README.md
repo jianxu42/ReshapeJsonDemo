@@ -3,7 +3,10 @@
 This is a demo of how to reshape JSON with Azure Functions.
 
 ```mermaid
-[PowerApps] --> [CustomConnector] --> [AzureFunctions] --> [CustomHandler]
+graph TD;
+    PowerApps[Start]-->CustomConnector;
+    CustomConnector-->CustomHandler;
+    CustomHandler-->PowerApps[End];
 ```
 
 ---
