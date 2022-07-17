@@ -15,6 +15,5 @@ This is a demo of how to reshape JSON with Azure Functions.
 - [Power Apps](https://powerapps.microsoft.com/)
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-![Alt text](VSCode/vscode.png)
 
 - [Rust](https://www.rust-lang.org/)
