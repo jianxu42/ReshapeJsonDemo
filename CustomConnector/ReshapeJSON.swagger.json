@@ -1,80 +1,49 @@
-{
-  "swagger": "2.0",
-  "info": {
-    "title": "ReshapeJSON",
-    "description": "",
-    "version": "1.0"
-  },
-  "host": "reshapejson.azurewebsites.net",
-  "basePath": "/",
-  "schemes": [
-    "https"
-  ],
-  "consumes": [],
-  "produces": [],
-  "paths": {
-    "/api/addrowid": {
-      "post": {
-        "responses": {
-          "default": {
-            "description": "default",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "RowID": {
-                    "type": "integer",
-                    "format": "int32",
-                    "description": "RowID"
-                  },
-                  "ID": {
-                    "type": "integer",
-                    "format": "int32",
-                    "description": "ID"
-                  },
-                  "Title": {
-                    "type": "string",
-                    "description": "Title"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "summary": "post",
-        "operationId": "post",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "required": false,
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "ID": {
-                    "type": "integer",
-                    "format": "int32",
-                    "description": "ID"
-                  },
-                  "Title": {
-                    "type": "string",
-                    "description": "Title"
-                  }
-                }
-              }
-            }
-          }
-        ]
-      }
-    }
-  },
-  "definitions": {},
-  "parameters": {},
-  "responses": {},
-  "securityDefinitions": {},
-  "security": [],
-  "tags": []
-}
+swagger: '2.0'
+info: {title: ReshapeJSON, description: '', version: '1.0'}
+host: reshapejson.azurewebsites.net
+basePath: /
+schemes: [https]
+consumes: []
+produces: []
+paths:
+  /api/addrowid:
+    post:
+      responses:
+        default:
+          description: default
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                RowID: {type: integer, format: int32, description: RowID}
+                ID: {type: integer, format: int32, description: ID}
+                Title: {type: string, description: Title}
+      summary: addrowid
+      operationId: addrowid
+      parameters:
+      - name: body
+        in: body
+        required: false
+        schema:
+          type: array
+          items:
+            type: object
+            properties:
+              ID: {type: integer, format: int32, description: ID}
+              Title: {type: string, description: Title}
+  /api/echo:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: echo
+      operationId: echo
+      parameters: []
+definitions: {}
+parameters: {}
+responses: {}
+securityDefinitions: {}
+security: []
+tags: []
