@@ -4,7 +4,7 @@
 
 ### Cloud services and tools used
 
-[SharePoint](https://sharepoint.microsoft.com/)
+[SharePoint](https://www.microsoft.com/en-sg/microsoft-365/sharepoint/collaboration/)
 ![Alt text](SharePointList/SharePointList.png)
 
 [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
