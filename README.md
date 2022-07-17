@@ -15,3 +15,6 @@
 ![Alt text](PowerApps/powerapps.png)
 
 [Rust](https://www.rust-lang.org/)
+
+[Visual Studio Code](https://code.visualstudio.com/)
+![Alt text](VSCode/vscode.png)
