@@ -47,7 +47,7 @@ async fn main() {
     let new_data_list_filter = warp::any().map(move || new_data_list.clone());
     let promote = warp::post()
         .and(warp::path("api"))
-        .and(warp::path("addrowid"))
+        .and(warp::path("AddRowID"))
         .and(json_body())
         .and(new_data_list_filter)
         .and_then(update_body);
