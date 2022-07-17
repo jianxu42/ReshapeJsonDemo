@@ -45,12 +45,18 @@ pub async fn update_body(
 async fn main() {
     let new_data_list = DataVec::default();
     let new_data_list_filter = warp::any().map(move || new_data_list.clone());
-    let promote = warp::post()
+    let route_addrowid = warp::post()
         .and(warp::path("api"))
         .and(warp::path("addrowid"))
         .and(json_body())
         .and(new_data_list_filter)
         .and_then(update_body);
+    let route_echo = warp::get()
+        .and(warp::path("api"))
+        .and(warp::path("echo"))
+        .and(warp::path::end())
+        .map(|| "Hello, world!");
+    let route = route_addrowid.or(route_echo);
 
     let port_key = "FUNCTIONS_CUSTOMHANDLER_PORT";
     let port: u16 = match env::var(port_key) {
@@ -58,5 +64,5 @@ async fn main() {
         Err(_) => 3000,
     };
 
-    warp::serve(promote).run((Ipv4Addr::LOCALHOST, port)).await
+    warp::serve(route).run((Ipv4Addr::LOCALHOST, port)).await
 }
