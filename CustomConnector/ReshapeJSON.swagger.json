@@ -13,7 +13,7 @@
   "consumes": [],
   "produces": [],
   "paths": {
-    "/api/ReshapeJSON": {
+    "/api/addrowid": {
       "post": {
         "responses": {
           "default": {
