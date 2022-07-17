@@ -1,10 +1,14 @@
 # Reshape JSON Demo
 
-### SharePoint List
-![Alt text](SharePointList/SharePointList.png "SharePoint List")
+# This is a demo of how to reshape JSON with Azure Function App.
 
-### Azure Function App
+## Cloud services and tools used
 
-### Custom Connector
+[SharePoint](https://sharepoint.microsoft.com/)
+![Alt text](SharePointList/SharePointList.png)
 
-### Power Apps
+[Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+
+[Custom Connector](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
+
+[Rust](https://www.rust-lang.org/)
