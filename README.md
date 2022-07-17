@@ -1,20 +1,20 @@
 # Reshape JSON Demo
 
-## This is a demo of how to reshape JSON with Azure Function App.
+This is a demo of how to reshape JSON with Azure Functions.
 
-### Cloud services and tools used
+***
 
-[SharePoint](https://www.microsoft.com/en-sg/microsoft-365/sharepoint/collaboration/)
-![Alt text](SharePointList/SharePointList.png)
+## Cloud services and tools used
 
-[Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+- [SharePoint](https://www.microsoft.com/en-sg/microsoft-365/sharepoint/collaboration/)
 
-[Custom Connector](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
+- [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
 
-[Power Apps](https://powerapps.microsoft.com/)
-![Alt text](PowerApps/powerapps.png)
+- [Custom Connector](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
 
-[Rust](https://www.rust-lang.org/)
+- [Power Apps](https://powerapps.microsoft.com/)
 
-[Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 ![Alt text](VSCode/vscode.png)
+
+- [Rust](https://www.rust-lang.org/)
