@@ -47,9 +47,9 @@ async fn main() {
     let new_data_list_filter = warp::any().map(move || new_data_list.clone());
     let promote = warp::post()
         .and(warp::path("api"))
-        .and(warp::path("ReshapeJSON"))
+        .and(warp::path("addrowid"))
         .and(json_body())
-        .and(new_data_list_filter.clone())
+        .and(new_data_list_filter)
         .and_then(update_body);
 
     let port_key = "FUNCTIONS_CUSTOMHANDLER_PORT";
