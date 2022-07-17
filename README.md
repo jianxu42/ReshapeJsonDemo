@@ -4,9 +4,10 @@ This is a demo of how to reshape JSON with Azure Functions.
 
 ```mermaid
 graph TD;
+    PowerApps-->SharePoint;
     PowerApps-->CustomConnector;
-    CustomConnector-->CustomHandler;
-    CustomHandler-->PowerApps;
+    CustomConnector-->AzureFunctions;
+    AzureFunctions-->CustomHandler;
 ```
 
 ---
