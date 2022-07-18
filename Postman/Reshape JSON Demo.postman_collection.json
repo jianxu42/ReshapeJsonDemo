@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "b7fb7c33-36cf-4c31-b0d5-e7ea2d84159b",
+		"name": "Reshape JSON Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "562496"
+	},
+	"item": [
+		{
+			"name": "add row id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"ID\": 1,\r\n        \"Title\": \"T1\"\r\n    },\r\n    {\r\n        \"ID\": 2,\r\n        \"Title\": \"T2\"\r\n    },\r\n    {\r\n        \"ID\": 5,\r\n        \"Title\": \"T5\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reshapejson.azurewebsites.net/api/addrowid",
+					"protocol": "https",
+					"host": [
+						"reshapejson",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"addrowid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "echo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"ID\": 1,\r\n        \"Title\": \"T1\"\r\n    },\r\n    {\r\n        \"ID\": 2,\r\n        \"Title\": \"T2\"\r\n    },\r\n    {\r\n        \"ID\": 5,\r\n        \"Title\": \"T5\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reshapejson.azurewebsites.net/api/echo",
+					"protocol": "https",
+					"host": [
+						"reshapejson",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"echo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
