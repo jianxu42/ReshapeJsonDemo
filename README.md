@@ -32,7 +32,7 @@ graph TD;
 
 > Prerequisites
 >
-> - Power Apps license
+> - Power Apps(premium) & SharePoint licenses
 > - Azure subscription
 
 1. Clone the github repo to local.
