@@ -38,4 +38,5 @@ graph TD;
 1. Clone the github repo to local.
 2. Create the Function App in Azure and deploy the function.
 3. Set up the custom connector in [Power Apps make portal](https://make.powerapps.com).
-4. Open the Power Apps from the portal, replace the custom connection and SharePoint list to verify if the function works.
+4. Create the SharePoint list.
+5. Open the Power Apps from the portal, replace the custom connection and SharePoint list to verify if the function works.
