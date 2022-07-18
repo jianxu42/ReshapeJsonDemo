@@ -43,3 +43,5 @@ graph TD;
 4. Set up the custom connector in [Power Apps make portal](https://make.powerapps.com).
 5. Create the SharePoint list.
 6. Open the Power Apps from the portal, replace the custom connection and SharePoint list to verify if the function works.
+
+> Please check more details in the folders.
