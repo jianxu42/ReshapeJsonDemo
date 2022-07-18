@@ -24,6 +24,8 @@ graph TD;
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 
+- [Postman](https://www.postman.com/)
+
 - [Rust](https://www.rust-lang.org/)
 
 ---
