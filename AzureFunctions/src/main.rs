@@ -33,8 +33,11 @@ pub async fn update_body(
 ) -> Result<impl warp::Reply, Infallible> {
     let mut i: i64 = 1;
     for old_data in old_data_vec.iter() {
-        let mut vec_tmp = vec![Data::new(Some(i), old_data.id, old_data.title.clone())];
-        new_data_vec.append(&mut vec_tmp);
+        new_data_vec.append(&mut vec![Data::new(
+            Some(i),
+            old_data.id,
+            old_data.title.clone(),
+        )]);
         i += 1;
     }
 
