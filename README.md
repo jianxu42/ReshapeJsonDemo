@@ -2,6 +2,49 @@
 
 This is a demo of how to reshape JSON with Azure Functions.
 
+Input:
+
+```
+[
+    {
+        "ID": 1,
+        "Title": "T1"
+    },
+    {
+        "ID": 3,
+        "Title": "T3"
+    },
+    {
+        "ID": 5,
+        "Title": "T5"
+    }
+]
+```
+
+Output:
+
+```
+[
+    {
+        "RowID": 1,
+        "ID": 1,
+        "Title": "T1"
+    },
+    {
+        "RowID": 2,
+        "ID": 3,
+        "Title": "T3"
+    },
+    {
+        "RowID": 3,
+        "ID": 5,
+        "Title": "T5"
+    }
+]
+```
+
+flow chart:
+
 ```mermaid
 graph TD;
     PowerApps-->SharePoint;
